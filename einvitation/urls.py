@@ -7,4 +7,5 @@ urlpatterns = [
 #    path('',include('weddingpage.urls')),
     path('', weddingpage.views.home, name='home'),
     path('blissful/',include('weddingpage.urls')),
+    path('twainlove/',include('twainlove.urls')),
 ]
