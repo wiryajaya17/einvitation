@@ -85,7 +85,7 @@ ul {
 
 /*-- //Reset-Code --*/
 
-.about, .services,.contact,.slider-photo, .team, .days-coming ,.buttom-w3,.blog,.gallery{
+.cardsection, .about, .services,.contact,.slider-photo, .team, .days-coming ,.buttom-w3,.blog,.gallery{
     padding: 6em 0;
 }
 
@@ -108,14 +108,14 @@ ul {
     min-height: 800px;
 }
 .bannerhome {
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 /*-- header --*/
 /*-- nav --*/
-.header-bar{border-bottom: 1px solid #fff;}
+.header-bar{border-bottom: 1px solid #888;}
 .navbar-default {
     background: none;
     border: none;
@@ -428,15 +428,23 @@ position: relative;
 .slider-info h4 {
     font-size: 5em;
 	font-family: 'Great Vibes', cursive;
-    color: #FFF;
+    color: #000;
     letter-spacing: 3px;
     margin: 0px 0px 10px;
 
 }
+
 .slider-info p {
     font-size: 24px;
     font-weight: 400;
-    color: #d3d8d8;
+    color: #333333;
+    line-height: 35px;
+}
+
+.slider-info p span {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
     line-height: 35px;
 }
 
@@ -735,11 +743,27 @@ h4.modal-title {
 }
 --*/
 .slider-photo {
-  background: #DA4453;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+.cardsection {
+
+}
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+
 .carousel {
     margin-bottom: 0;
     padding:0px;
@@ -1281,7 +1305,7 @@ footer p a:hover{color:white;}
 .banner {
     min-height: 635px;
 }
-.about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
+.cardsection, .about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
     padding: 5em 0;
 }
 .low-grid {
@@ -1311,7 +1335,7 @@ footer p a:hover{color:white;}
 .carousel-control {
     margin-top: 56px;
 }
-.about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
+.cardsection, .about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
     padding: 4em 0;
 }
 .title {
@@ -1344,7 +1368,7 @@ footer p a:hover{color:white;}
 	.banner {
     min-height: 586px;
 }
-.about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
+.cardsection, .about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
     padding: 3.5em 0;
 }
 .bar-grids {
@@ -1474,7 +1498,7 @@ figure.effect-julia p {
 .banner {
     min-height: 540px;
 }
-.about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
+.cardsection, .about, .services, .contact, .slider-photo, .team, .days-coming, .buttom-w3, .blog, .gallery {
     padding: 3em 0;
 }
 .title {
@@ -1599,7 +1623,7 @@ footer p {
 	left: -8px;
     top: 73%;
 }
-.about, .services, .contact,
+.cardsection, .about, .services, .contact,
 .slider-photo, .team, .days-coming,
 .buttom-w3, .blog, .gallery {
     padding: 2.2em 0;
