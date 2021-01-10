@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>E-VERSION CARD</title>
+
+	<!--meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Blissful Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+	<!--//meta tags ends here-->
+
+	<!--booststrap-->
+
+	<link href="{% static 'weddingpage/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+	<!--//booststrap end-->
+
+	<!-- font-awesome icons -->
+	<link href="{% static 'weddingpage/css/font-awesome.css' %}" rel="stylesheet">
+	<!-- //font-awesome icons -->
+
+	<!-- banner text slider-->
+
+	<!--// banner text slider-->
+
+	<!--jquery-css counter time-->
+	<link rel="stylesheet" href="{% static 'weddingpage/css/jquery.countdown.css' %}" />
+	<!--//jquery-css counter time-->
+
+	<!--lightbox slider-->
+	<link rel="stylesheet" href="{% static 'weddingpage/css/lightbox.css' %}">
+	<!-- lightbox slider-->
+
+	<!--stylesheets-->
+	<link href="{% static 'weddingpage/css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+	<!--//stylesheets-->
+	<link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+</head>
+
+<body>
+	<audio controls autoplay loop id="my_audio">
+  	<source src="{% static 'weddingpage/sounds/test.mp3' %}">
+	</audio>
+<!--	<embed src="{% static 'weddingpage/sounds/richard-wagner-wedding-march-classical-piano.mp3' %}" loop="true" autostart="true" width="2" height="0"> -->
+	<div class="cardsection">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-6">
+				<div class="card shadow">
+					<div class="inner">
+						<img class="card-image-top" src="{% static 'weddingpage/images/p2.jpg' %}" alt="Image" style="width:400px">
+					</div>
+					<div class="card-body text-center">
+						<h5 class="card-title">Design</h5>
+						<p class="card-text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+						<a href="#" class="btn btn-success">Check it out..asdasd</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-sm-6">
+				<div class="card shadow">
+					<div class="inner">
+						<img class="card-image-top" src="{% static 'weddingpage/images/p2.jpg' %}" alt="Image" style="width:400px">
+					</div>
+					<div class="card-body text-center">
+						<h5 class="card-title">Design</h5>
+						<p class="card-text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+						<a href="#" class="btn btn-success">Check it out..</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	</div>
+	-->
+	<!--//cardsection-->
+
+<footer>
+	<p>  &copy; 2018 Blissful. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts </a></p>
+</footer>
+
+
+<!--js working-->
+<script type='text/javascript' src='{% static 'weddingpage/js/jquery-2.2.3.min.js' %}'></script>
+<script src="{% static 'weddingpage/js/bootstrap.js' %}"></script>
+<!-- //js  working-->
+
+<!--  light box js -->
+<script src="{% static 'weddingpage/js/lightbox-plus-jquery.min.js' %}"> </script>
+<!-- //light box js-->
+<!-- banner-->
+<script src="{% static 'weddingpage/js/responsiveslides.min.js' %}"></script>
+<script>
+	$(function () {
+		$("#slider").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			speed: 1000,
+			namespace: "callbacks",
+			before: function () {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+			}
+		});
+	});
+</script>
+<!--// banner-->
+<!--scripts-->
+<script src="{% static 'weddingpage/js/jquery.countdown.js' %}"></script>
+<!--countdowntimer-js-->
+<script src="{% static 'weddingpage/js/script.js' %}"></script>
+<!--countdowntimer-js-->
+<!--//scripts-->
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'weddingpage/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'weddingpage/js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+		$(".scroll").click(function (event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 900);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+
+
+		$().UItoTop({
+			easingType: 'easeOutQuart'
+		});
+
+	});
+</script>
+<!-- //here ends scrolling icon -->
+</body>
+
+</html>

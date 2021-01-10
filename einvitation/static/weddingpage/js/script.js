@@ -22,7 +22,6 @@ $(document).ready(function(){
 		function(){ $(this).animate({ top: 0 }, 'fast'); }
 	);
 
-
-
+	$("#my_audio").get(0).play();
 
 });

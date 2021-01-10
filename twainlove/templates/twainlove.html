@@ -10,6 +10,7 @@
 
     <!-- Page Title -->
     <title> Twain Love - Responsive HTML Wedding Template </title>
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'twainlove/images/story/1.jpg' %}"/>
 
     <!-- Icon fonts -->
     <link href="{% static 'twainlove/css/themify-icons.css' %}" rel="stylesheet">
@@ -817,13 +818,14 @@
                 <i class="ti-music-alt"></i>
             </button>
             <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102137206&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                <!-- <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102137206&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
+                <iframe src="{% static 'weddingpage/sounds/test.mp3' %}" allow="autoplay"></iframe>
             </div>
         </div>
         <!-- end music box -->
     </div>
     <!-- end of page-wrapper -->
-
+    <audio id="my_audio" src="{% static 'weddingpage/sounds/test.mp3' %}" loop="loop"></audio>
 
 
     <!-- All JavaScript files

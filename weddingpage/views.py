@@ -5,3 +5,6 @@ def home(request):
 
 def blissful(request):
     return render(request, 'blissful.html', {})
+
+def test(request):
+    return render(request, 'testpage.html', {})

@@ -187,7 +187,7 @@
                     var innerTranslate = slideProgress * innerOffset;
                     swiper.slides[i].querySelector(".slide-inner").style.transform =
                     "translate3d(" + innerTranslate + "px, 0, 0)";
-                }      
+                }
             },
 
             touchStart: function() {
@@ -312,7 +312,7 @@
         preloader: false,
         fixedContentPos: false
     });
-    
+
 
 
     /*------------------------------------------
@@ -615,7 +615,7 @@
         $(window).on('load', function() {
 
             preloader();
-            
+
             sortingGallery();
 
             toggleMobileNavigation();
@@ -660,5 +660,7 @@
         }, 200));
 
     });
+
+
 
 })(window.jQuery);
