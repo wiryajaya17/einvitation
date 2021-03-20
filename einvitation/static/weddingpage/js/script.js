@@ -23,5 +23,12 @@ $(document).ready(function(){
 	);
 
 	$("#my_audio").get(0).play();
+	$('#myModal').modal('show');
+	$('#tutup').click(function () {
+        $("#my_audio").get(0).play();
+    });
+	$('#buka').click(function () {
+	       $("#my_audio").get(0).play();
+	});
 
 });

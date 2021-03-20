@@ -626,6 +626,7 @@
 
             smoothScrolling($(".go-rsvp-area"), $(".site-header .navigation").innerHeight());
 
+
         });
 
 

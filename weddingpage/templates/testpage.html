@@ -15,6 +15,7 @@
 		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); }
 	</script>
+
 	<!--//meta tags ends here-->
 
 	<!--booststrap-->
@@ -98,6 +99,27 @@
 	</div>
 	-->
 	<!--//cardsection-->
+	<a class="btn" data-toggle="modal" href="#myModal">Launch Modal</a>
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button id="tutup" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Blissful</h4>
+				</div>
+				<div class="modal-body">
+					<div class="out-info">
+						<img src="{% static 'weddingpage/images/mol1.jpg' %}" alt="" />
+						<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+							eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellu</p>
+					</div>
+					<a id="buka" href="#" class="btn btn-success" data-dismiss="modal">BUKA UNDANGAN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //modal -->
 
 <footer>
 	<p>  &copy; 2018 Blissful. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts </a></p>
@@ -105,13 +127,12 @@
 
 
 <!--js working-->
-<script type='text/javascript' src='{% static 'weddingpage/js/jquery-2.2.3.min.js' %}'></script>
+<script type='text/javascript' src="{% static 'weddingpage/js/jquery-2.2.3.min.js' %}"></script>
+
 <script src="{% static 'weddingpage/js/bootstrap.js' %}"></script>
 <!-- //js  working-->
 
-<!--  light box js -->
-<script src="{% static 'weddingpage/js/lightbox-plus-jquery.min.js' %}"> </script>
-<!-- //light box js-->
+
 <!-- banner-->
 <script src="{% static 'weddingpage/js/responsiveslides.min.js' %}"></script>
 <script>
