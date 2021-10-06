@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'weddingpage',
     'twainlove',
     'wahyunita',
+    'tudenovi',
 ]
 
 MIDDLEWARE = [
