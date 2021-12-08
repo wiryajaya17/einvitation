@@ -11,4 +11,5 @@ urlpatterns = [
     path('twainlove/',include('twainlove.urls')),
     path('wahyu-yunita-wedding/',include('wahyunita.urls')),
     path('tude-novi-wedding/',include('tudenovi.urls')),
+    path('undangan-metatah/',include('metatah.urls')),
 ]
