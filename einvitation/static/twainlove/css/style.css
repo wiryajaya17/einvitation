@@ -2202,7 +2202,7 @@ couple-area end
     background: rgba(133,170,186,.5);
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-} 
+}
 
 .count-down-section #clock>div+div {
     margin-left: 2%;
@@ -2505,6 +2505,8 @@ animation: spineer 2s infinite;
 .cta-content {
     text-align: center;
     padding: 100px 0;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .cta-content h2 {
@@ -2829,7 +2831,7 @@ animation: spineer 2s infinite;
 .gallery-section .gallery-filters ul .current {
     color: #fff;
     text-decoration: none;
-    background:#85aaba; 
+    background:#85aaba;
 }
 
 @media (max-width: 767px) {
@@ -3242,7 +3244,7 @@ option {
 .count-down-area-2 .count-down-section #clock>div {
     padding: 80px 0;
     border-radius: 50%;
-} 
+}
 .groomsmen-bridesmaid-area-2 {
     padding: 100px 0 50px;
 }
@@ -3335,7 +3337,7 @@ option {
   blog page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-3.0  blog-pg-section 
+3.0  blog-pg-section
 --------------------------------------------------------------*/
 .blog-pg-section {
   /*** format-video ***/
@@ -3717,7 +3719,7 @@ option {
   float: left;
 }
 
-.blog-single-section .tag-share .tag ul > li + li, 
+.blog-single-section .tag-share .tag ul > li + li,
 .blog-single-section .tag-share .share ul > li + li {
     margin-left: 10px;
     list-style: none;
@@ -4094,6 +4096,3 @@ option {
     padding: 0;
   }
 }
-
-
-

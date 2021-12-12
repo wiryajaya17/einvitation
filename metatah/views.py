@@ -1,4 +1,8 @@
 from django.shortcuts import render
 
-def metatah(request):
-    return render(request, 'metatah.html', {})
+def metatah(request, message = ''):
+    query = message
+    context = {
+        'message' : query,
+    }
+    return render(request, 'metatah.html', context)
