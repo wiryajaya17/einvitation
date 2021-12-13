@@ -710,7 +710,7 @@
         <!--End project area-->
 
         <!-- rsvp-area strat -->
-        <!--
+
         <div id="rsvp" class="rsvp-area go-rsvp-area">
             <div class="container">
                 <div class="row">
@@ -722,16 +722,17 @@
                                 </div>
                             </div>
                             <div class="contact-form form-style">
-                                <form id="rsvp-form" action="mail.php" class="validate-rsvp-form" method="post">
+                                <form action="{% url 'create' %}" class="validate-rsvp-form" method="POST">
+                                  {% csrf_token %}
                                     <div class="row">
                                         <div class="col-12 col-sm-6">
-                                            <input type="text" placeholder="Your Name*" id="fname" name="name">
+                                            <input type="text" placeholder="Your Name*" name="name">
                                         </div>
                                         <div class="col-12  col-sm-6">
-                                            <input type="text" placeholder="Your Email*" id="email" name="email">
+                                            <input type="text" placeholder="Your Email*" name="email">
                                         </div>
                                         <div class="col col-sm-6">
-                                            <select class="form-control" name="rsvp">
+                                            <select class="form-control" name="num_of_rsvp">
                                                 <option disabled selected>Number Of rsvp*</option>
                                                 <option>1</option>
                                                 <option>2</option>
@@ -740,18 +741,17 @@
                                             </select>
                                         </div>
                                         <div class="col col-sm-6">
-                                            <select class="form-control" name="events">
+                                            <select class="form-control" name="flag_attending">
                                                 <option disabled selected>I Am Attending*</option>
-                                                <option>Al events</option>
-                                                <option>Wedding ceremony</option>
-                                                <option>Reception party</option>
+                                                <option>Y</option>
+                                                <option>N</option>
                                             </select>
                                         </div>
                                         <div class="col-12 col-sm-12">
-                                            <textarea class="contact-textarea" placeholder="Message" name="notes"></textarea>
+                                            <textarea class="contact-textarea" placeholder="Message" name="message_body"></textarea>
                                         </div>
                                         <div class="col-12 text-center">
-                                            <button id="submit" class="submit">Send Invitation</button>
+                                            <button id="submit" class="submit">Send Wishes</button>
                                             <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
                                         </div>
                                          <div class="col col-md-12 success-error-message">
@@ -766,7 +766,7 @@
                 </div>
             </div>
         </div>
-        -->
+
         <!-- rsvp-area end -->
         <!-- getting-area start -->
         <!--
@@ -806,26 +806,32 @@
         -->
         <!-- getting-area end -->
         <!-- Gift Registration start -->
-        <!--
         <div class="Gift-area pt--100 pb--30">
             <div class="container">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <h2>Gift Registration</h2>
+                        <h2>Wishes</h2>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.</p>
+                    <p>Thank you for all of your wishes for us</p>
                 </div>
                 <div class="gift-item">
                     <div class="Gift-carousel owl-carousel">
-                        <img src="{% static 'twainlove/images/gift/img-1.jpg' %}" alt="clinet">
-                        <img src="{% static 'twainlove/images/gift/img-2.jpg' %}" alt="clinet">
-                        <img src="{% static 'twainlove/images/gift/img-3.jpg' %}" alt="clinet">
-                        <img src="{% static 'twainlove/images/gift/img-4.jpg' %}" alt="clinet">
+                      {% for rsvp in rsvps.all %}
+
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ rsvp.name }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ rsvp.post_date | date:"d/m/Y H:i"}}</h6>
+                            <h6 class="card-text">{{ rsvp.message_body | slice:"0:200"}}</h6>
+                          </div>
+                        </div>
+
+                      {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
-        -->
+
         <!-- Gift Registration end -->
 
         <!-- start site-footer -->

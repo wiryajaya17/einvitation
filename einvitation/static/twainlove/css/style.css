@@ -3043,7 +3043,7 @@ animation: spineer 2s infinite;
     right: -107px;
     top: -112px;
     content: "";
-    background: url(../images/rsvp/img-1.png) no-repeat center center / cover;
+    /* background: url(../images/rsvp/img-1.png) no-repeat center center / cover; */
     width: 200px;
     height: 200px;
     z-index: -1;
@@ -3053,7 +3053,7 @@ animation: spineer 2s infinite;
     left: -113px;
     bottom: -121px;
     content: "";
-    background: url(../images/rsvp/img-2.png) no-repeat center center / cover;
+    /* background: url(../images/rsvp/img-2.png) no-repeat center center / cover; */
     width: 200px;
     height: 200px;
     z-index: -1;
