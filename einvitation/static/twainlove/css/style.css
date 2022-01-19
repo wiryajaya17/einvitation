@@ -388,6 +388,7 @@ button:focus {
   display: inline-block;
   position: relative;
   margin-top: 0;
+  color: #5c6c61;
 }
 
 @media (max-width: 991px) {
@@ -1552,7 +1553,8 @@ div#preloader {
   text-align: left;
 }
 .hero-slider .slide-inner .slide-content{
-  background: rgba(133,170,186,.8);
+  /* background: rgba(133,170,186,.8); */
+  background: rgba(92,108,97,.8);
   border-top-right-radius: 80px;
   border-bottom-left-radius: 80px;
   -webkit-animation: spineer 2s infinite;
@@ -1802,7 +1804,7 @@ div#preloader {
 }
 
 .site-footer .text{
-  background: rgba(133,170,186,.9);
+  background: rgba(92,108,98,.4);
   max-width: 600px;
   margin: auto;
   padding: 60px 0;
@@ -1888,7 +1890,7 @@ div#preloader {
 }
 
 .site-footer .back-to-top {
-  background-color:#85aaba;
+  background-color:#5c6c61;
   width: 90px;
   height: 90px;
   line-height: 70px;
@@ -1996,7 +1998,9 @@ div#preloader {
 0.6 couple-area
 =====================================*/
 .couple-area{
+  background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
   position: relative;
+  background-attachment: fixed;
 }
 .section-title4 h2:before {
     width: 50%;
@@ -2067,9 +2071,10 @@ div#preloader {
   max-width: 450px;
   margin: auto;
 }
+
 .couple-content h4 {
     font-size: 40px;
-    color: #444;
+    color: #5c6c61;
     font-weight: 700;
     font-family: 'Great Vibes', cursive;
     text-transform: capitalize;
@@ -2078,7 +2083,8 @@ div#preloader {
 
 .couple-content p {
     padding: 20px 0 30px;
-    font-stize:16px;
+    font-size:16px;
+    color: #5c6c61;
     margin-bottom: 0;
 }
 
@@ -2121,7 +2127,7 @@ couple-area end
     height: 100%;
     position: absolute;
     background: #000;
-    opacity: .7;
+    opacity: .2;
     left: 0;
     top: 0;
 }
@@ -2138,7 +2144,7 @@ couple-area end
 .count-down-section h2 {
     font-family: "Great Vibes", cursive;
     font-size: 60px;
-    color: #fff;
+    color: #5c6c61;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -2195,11 +2201,11 @@ couple-area end
     width: 22%;
     float: left;
     text-align: center;
-    color: #fff;
+    color: #5c6c61;
     padding: 36px 0;
     position: relative;
     z-index: 1;
-    background: rgba(133,170,186,.5);
+    background: rgba(92,108,98,.4);
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -2499,7 +2505,7 @@ animation: spineer 2s infinite;
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: .8;
+    opacity: .1;
 }
 
 .cta-content {
@@ -2511,14 +2517,15 @@ animation: spineer 2s infinite;
 
 .cta-content h2 {
     font-size: 55px;
-    color: #fff;
+    /* color: #fff; */
+    color: #5c6c61;
     font-family: 'Great Vibes', cursive;
 }
 
 .cta-content p {
     font-size: 18px;
     padding: 20px 50px 30px;
-    color: #fff;
+    color: #5c6c61;
     max-width: 700px;
     margin: auto;
 }
@@ -3162,7 +3169,8 @@ option {
   background: url(../images/section-title-flower.png) no-repeat center center / cover;
 }
 .section-title-2 h2{
-  color: #fff;
+  /* color: #fff; */
+  color: #5c6c61;
 }
 
 /*=============================
@@ -3328,8 +3336,11 @@ option {
 }
 
 .slide-inner-3{
- background: url(../images/slider/slide-4.jpg) no-repeat center center / cover;
+ background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
+ /* background: url(../images/slider/img-1.jpg) no-repeat center center / cover; */
  height: 850px;
+ /* position: relative; */
+ background-attachment: fixed;
 }
 
 
