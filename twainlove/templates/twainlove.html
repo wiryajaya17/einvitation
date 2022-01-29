@@ -743,7 +743,7 @@
                         <div class="rsvp-wrap">
                             <div class="col-12">
                                 <div class="section-title section-title-2 text-center">
-                                    <h2>Be Our rsvp</h2>
+                                    <h2>Post Your Wish</h2>
                                 </div>
                             </div>
                             <div class="contact-form form-style">
@@ -830,34 +830,76 @@
         </div>
         -->
         <!-- getting-area end -->
-        <!-- Gift Registration start -->
-        <div class="Gift-area pt--100 pb--30">
+
+        <section class="blog-single-section section-padding">
             <div class="container">
-                <div class="col-12">
-                    <div class="section-title text-center">
-                        <h2>Wishes</h2>
-                    </div>
-                    <p>Thank you for all of your wishes for us</p>
-                </div>
-                <div class="gift-item">
-                    <div class="Gift-carousel owl-carousel">
-                      {% for rsvp in rsvps.all %}
+              <div class="col-12">
+                  <div class="section-title text-center">
+                      <h2>Wishes</h2>
+                  </div>
+              </div>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <div class="blog-content blog-content-2 clearfix">
 
-                        <div class="card" style="width: 18rem;">
-                          <div class="card-body">
-                            <h5 class="card-title">{{ rsvp.name }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">{{ rsvp.post_date | date:"d/m/Y H:i"}}</h6>
-                            <h6 class="card-text">{{ rsvp.message_body | slice:"0:200"}}</h6>
-                          </div>
+                            <div class="comments-area">
+                                <div class="comments-section">
+                                    <h3 class="comments-title">Thank you for all your wishes</h3>
+                                    <ol class="comments">
+                                        {% for rsvp in rsvps.all %}
+                                        <li class="comment">
+                                            <div>
+                                                <div class="comment-main-area">
+                                                    <div class="comment-wrapper">
+                                                        <div class="comments-meta">
+                                                            <h4>{{ rsvp.name }} <span class="comments-date">{{ rsvp.post_date | date:"d/m/Y H:i"}}</span></h4>
+                                                        </div>
+                                                        <div class="comment-area">
+                                                            <p>{{ rsvp.message_body | slice:"0:200"}}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        {% endfor %}
+
+                                    </ol>
+                                </div> <!-- end comments-section -->
+                            </div> <!-- end comments-area -->
                         </div>
-
-                      {% endfor %}
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- end container -->
+        </section>
 
-        <!-- Gift Registration end -->
+
+
+        <!-- modal -->
+        <div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button id="tutup" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h6 class="modal-title">Kepada Yth. Bapak/ Ibu/ Saudara/ i:</h6>
+                <h3 class="modal-title">{{ message | upper }}</h3>
+              </div>
+              <div class="modal-body">
+                  <div class="out-info">
+                    <img src="{% static 'metatah/images/footer.jpg' %}" alt="" />
+                    <p>Om Swastiastu<br>Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya (Mepandes) putra-putri kami.
+                    <br><br>Manggala Karya
+                    <br>A.A. Ketut Sulandra</p>
+
+                  </div>
+                  <!-- <button type="button" class="btn btn-dark btn-lg">{{ message | upper }}</button> <br> -->
+                  <a id="buka" href="#" class="btn btn-info" data-dismiss="modal">BUKA UNDANGAN</a>
+
+
+                </div>
+              </div>
+          </div>
+        </div>
+          <!-- //modal -->
 
         <!-- start site-footer -->
         <footer class="site-footer">
@@ -876,19 +918,19 @@
         </footer>
         <!-- end site-footer -->
         <!-- strat music-box -->
-        <!-- strat music-box -->
         <div class="music-box music-box-2">
             <button class="music-box-toggle-btn">
                 <i class="ti-music-alt"></i>
             </button>
             <div class="music-holder">
                 <!-- <iframe src="{% static 'metatah/sounds/test.mp3' %}" allow="autoplay"></iframe> -->
-                <audio controls autoplay loop id="my_audio">
+                <audio controls loop id="my_audio">
                 	<source src="{% static 'metatah/sounds/backsound.mp3' %}">
               	</audio>
             </div>
         </div>
         <!-- end music box -->
+
 
 
     <!-- All JavaScript files
@@ -913,6 +955,6 @@
       	    $("#my_audio").get(0).play();
         });
     });
-    </script>
+</script>
 </body>
 </html>

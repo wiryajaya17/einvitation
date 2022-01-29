@@ -4,6 +4,7 @@ from django.utils import timezone
 # Create your models here.
 
 class Rsvp(models.Model):
+    owner = models.CharField(max_length=60)
     name = models.CharField(max_length=60)
     email = models.CharField(max_length=60)
     num_of_rsvp = models.IntegerField()
