@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'wahyunita',
     'tudenovi',
     'metatah',
+    'birthday',
 ]
 
 MIDDLEWARE = [
