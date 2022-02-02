@@ -2116,7 +2116,7 @@ couple-area end
 =============================*/
 
 .count-down-area {
-    background: url(../images/counter/1.jpg) no-repeat center center / cover;
+    background: url(../images/counter/1.jpg) center center/cover no-repeat local;
     background-attachment: fixed;
     position: relative;
 }
@@ -2492,7 +2492,7 @@ animation: spineer 2s infinite;
 =================================*/
 
 .cta-area {
-    background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
+    background: url(../images/cta/img-1.jpg) center center/cover no-repeat local;
     position: relative;
     background-attachment: fixed;
 }
@@ -3015,7 +3015,7 @@ animation: spineer 2s infinite;
 }
 
 .rsvp-area {
-    background: url(../images/rsvp/img-1.jpg) no-repeat center center / cover;
+    background: url(../images/rsvp/img-1.jpg) center center/cover no-repeat local;
     padding: 150px 0;
     position: relative;
     background-attachment: fixed;
@@ -3335,12 +3335,12 @@ option {
 }
 
 .slide-inner-2{
- background: url(../images/slider/slide-3.jpg) no-repeat center center / cover;
+ background: url(../images/slider/slide-3.jpg) center center/cover no-repeat local;
  height: 850px;
 }
 
 .slide-inner-3{
- background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
+ background: url(../images/cta/img-1.jpg) center center/cover no-repeat local;
  /* background: url(../images/slider/img-1.jpg) no-repeat center center / cover; */
  height: 850px;
  /* position: relative; */
@@ -3561,7 +3561,7 @@ option {
   /*** comments area ***/
   /*** comment-respond ***/
 
-  background: url(../images/rsvp/img-1.jpg) no-repeat center center / cover;
+  background: url(../images/rsvp/img-1.jpg) center center/cover no-repeat local;
   padding: 150px 0;
   position: relative;
   background-attachment: fixed;
