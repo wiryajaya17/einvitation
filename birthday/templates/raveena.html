@@ -91,7 +91,8 @@
                     <canvas id="spirit-canvas"></canvas>
                 </div>
                 <div class="slide">
-                    <div class="slide-inner slide-inner-3">
+                    <!-- <div class="slide-inner slide-inner-3"> -->
+                    <div class="slide-inner slide-bg-image" data-background="{% static 'birthday/images/cta/img-1.jpg' %}">
                         <div class="container">
                             <div class="slide-content">
                                 <div data-swiper-parallax="200" class="slide-subtitle">
@@ -110,6 +111,35 @@
                 </div> <!-- end swiper-slide -->
             </div>
             <!-- end swiper-wrapper -->
+        </section>
+        <!-- end of hero slider -->
+        <!-- start of hero -->
+        <section class="hero-slider hero-style-3 hero-style-2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="{% static 'birthday/images/cta/img-1.jpg' %}">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="200" class="slide-subtitle">
+                                        <h4></h4>
+                                    </div>
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Raveena</h2>
+                                        <h2>is</h2>
+                                        <h2>Turning One</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-text">
+                                        <p>11 Februari 2022</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner -->
+                    </div> <!-- end swiper-slide -->
+                </div>
+                <!-- end swiper-wrapper -->
+            </div>
         </section>
         <!-- end of hero slider -->
         <!-- cta area start-->
@@ -302,13 +332,14 @@
                 <i class="ti-music-alt"></i>
             </button>
             <div class="music-holder">
-                
+
                 <audio controls loop id="my_audio">
                 	<source src="{% static 'birthday/sounds/backsound.mp3' %}">
               	</audio>
             </div>
         </div>
         <!-- end music box -->
+      </div>
 
 
 
