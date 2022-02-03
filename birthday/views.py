@@ -2,11 +2,12 @@ from django.shortcuts import render
 from twainlove.models import Rsvp
 from datetime import datetime
 
-def raveena(request):
+def raveena(request, message = ''):
     # rsvps = Rsvp.objects.filter(name='Wirwir')
     # rsvps = Rsvp.objects.post_date__gte=datetime.date.today()
+    query = message
     rsvps = Rsvp.objects.filter(owner='raveena').order_by('-post_date')
-    return render(request, 'raveena.html', {'rsvps' : rsvps})
+    return render(request, 'raveena.html', {'rsvps' : rsvps, 'message' : query})
 
 def wishes(request):
     if request.method == 'POST':

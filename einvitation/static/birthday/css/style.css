@@ -2492,7 +2492,7 @@ animation: spineer 2s infinite;
 =================================*/
 
 .cta-area {
-    background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
+    background: url(../images/cta/img-2.jpg) no-repeat center center / cover;
     position: relative;
     background-attachment: fixed;
 }
