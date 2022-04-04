@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'tudenovi',
     'metatah',
     'birthday',
+    'homepage',
 ]
 
 MIDDLEWARE = [
